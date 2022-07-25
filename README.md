@@ -11,7 +11,7 @@ How to use the script:
 - or
 - $ python main.py --i wlan0 --m 00:00:00:00:00:00 
 
-- you can check help by: python mac_changer.py --help
+- you can check help by: python main.py --help
 
 
 Disclamer: To be used for Educational purposes only. 
