@@ -6,15 +6,18 @@ import optparse
 parser = optparse.OptionParser()
 
 parser.add_option("-i", "--interface", dest="interface", help="Interface to change MAC Address")
-parser.add_option("-m", "--mac", dest="new_mac", help="New MAC Address")
+parser.add_option("-m", "--mac", dest="new_Mac", help="New MAC Address")
 
 (options, arguments) = parser.parse_args()
 # options are the values we are entering
 
 parser.parse_args()
 
-interface = input("interface > ")
-new_Mac = input("new MAC >")
+interface = options.interface
+new_Mac = options.new_Mac
+
+# interface = input("interface > ")
+# new_Mac = input("new MAC >")
 # use 'raw_input' instead of 'input' if using python 2.7
 
 print("[+] Changing Mac Address for " + interface + " to " + new_Mac)
